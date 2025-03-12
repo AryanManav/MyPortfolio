@@ -56,15 +56,20 @@
   
   /* Contact Form */
   .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: rgba(255, 255, 255, 0.15);
     padding: 50px;
-    padding-right: 80px;
     border-radius: 10px;
     margin-top: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
   .input-group {
+    display: flex;
+    width: 500px;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 15px;
     text-align: left;
@@ -95,7 +100,7 @@
   
   .error {
     font-family: "Montserrat", sans-serif;
-    color: #ff4d4d;
+    color: #431fd4;
     font-size: 0.9rem;
   }
   
@@ -125,6 +130,10 @@
     /* Contact Section */
     .contact {
         padding: 40px 15px; /* Reduce padding */
+    }
+
+    .contact-form{
+      padding-right: 50px;
     }
 
     .contact h2 {
@@ -166,5 +175,9 @@
 
     .success-message {
         font-size: 0.9rem; /* Reduce message size */
+    }
+    .input-group{
+      display: flex;
+      width: 300px;
     }
 }

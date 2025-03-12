@@ -1,4 +1,6 @@
 .about{
+  margin-top: 100px;
+  margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -35,6 +37,7 @@
   
   .aboutme{
     display: flex;
+    margin: 0px;
   }
   
   .smallinfo{
@@ -87,4 +90,40 @@
     .biginfo {
         font-size: 1.2rem;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+  .about h2 {
+    /* font-size: 2rem; */
+    padding-left: 1rem;
+    text-align: center;
+}
+
+.about p {
+    /* font-size: 1rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+
+.aboutme {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center;
+    text-align: center;
+}
+
+.aboutme{
+  flex-direction: column-reverse;
+}
+
+.myphoto img {
+   margin: 0px;
+   padding: 0px;
+}
+
+.biginfo {
+    font-size: 1.2rem;
+}
 }
