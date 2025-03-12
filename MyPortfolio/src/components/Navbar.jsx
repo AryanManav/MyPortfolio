@@ -3,10 +3,14 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("#home"); // Default active section
+  const [menuOpen, setMenuOpen] = useState(false); // State to toggle menu
 
   return (
     <nav className="nav">
-      <ul>
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        &#9776;
+      </div>
+      <ul className={menuOpen ? "open" : ""}>
         <li>
           <a
             href="#home"

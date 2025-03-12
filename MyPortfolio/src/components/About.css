@@ -48,15 +48,41 @@
   }
   
   .about a {
-    color: black;
+    color: #a8cf02;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .about a:hover {
-    color: #1600fb;
+    color: #000000;
     text-decoration: underline;
   }
+
+  .cv-button {
+    display: inline-block;
+    margin: 1.5rem 3rem;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* color: #a8cf02; */
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cv-button:hover {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* transform: scale(1.05); */
+  }
+  
+  .cv-button:active {
+    transform: scale(0.99);
+  }
+  
   
   @media (max-width: 768px) {
     .about {
@@ -127,3 +153,34 @@
     font-size: 1.2rem;
 }
 }
+
+/* Contact Details */
+.contact-details {
+  /* padding-left: 3rem; */
+  font-size: 1rem;
+}
+
+.contact-details p {
+  margin: 0.5rem 0;
+}
+
+.contact-details a {
+  color: #000000;
+  /* font-weight: bold; */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  /* color: white; */
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-details {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+

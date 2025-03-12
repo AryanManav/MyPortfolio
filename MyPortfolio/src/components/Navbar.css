@@ -70,67 +70,46 @@
   width: 100%;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design for Hamburger Menu */
 @media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    padding: 15px 10px;
+  .hamburger {
+    display: block;
   }
 
   .nav ul {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .nav a {
-    font-size: 18px;
-  }
-}
-
-  
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-  }
-  
-  .nav a {
-    position: relative;
-    text-decoration: none;
-    font-size: 18px;
-    /* font-weight: bold; */
-    color: white;
-    transition: color 0.3s ease;
-  }
-  
-  .nav a::after {
-    content: "";
+    width: 100%;
     position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: -5px;
+    top: 60px;
     left: 0;
-    background-color: #a8cf02;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-out;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav ul.open {
+    display: flex;
+  }
+
+  .nav li {
+    width: 100%;
+  }
+
+  .nav a {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
   }
   
-  .nav a:hover {
-    color: #a8cf02;
-  }
-  
-  .nav a:hover::after {
-    transform: scaleX(1);
-  }
-  
-/* Active Link Styling */
-.nav a.active {
-    color: #a8cf02;
 }
 
-.nav a.active::after {
-    width: 100%;
-}
 
