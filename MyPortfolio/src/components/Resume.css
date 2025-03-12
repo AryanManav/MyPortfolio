@@ -377,4 +377,99 @@
   }
   
   
-  
+  @media (max-width: 768px) {
+    /* Resume Section */
+    .resume {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vert {
+        font-size: 4rem; /* Reduce size */
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Skills Section */
+    .skills h2, .projects h2, .education h2, .certifications h2 {
+        font-size: 2rem; /* Reduce heading size */
+        margin-top: 2rem;
+    }
+
+    .skillInfo {
+        grid-template-columns: repeat(3, 1fr); /* Reduce columns from 5 to 3 */
+        gap: 15px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sk {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .sk p {
+        font-size: 10px;
+    }
+
+    .sk img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Projects Section */
+    .projectinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .project-card h3 {
+        font-size: 18px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+    }
+
+    .project-card a {
+        padding: 6px 12px;
+    }
+
+    /* Education Section */
+    .educationinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-card {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .education-card h3 {
+        font-size: 18px;
+    }
+
+    .education-card p {
+        font-size: 14px;
+    }
+
+    /* Certifications Section */
+    .certi {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .certi ul li {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}

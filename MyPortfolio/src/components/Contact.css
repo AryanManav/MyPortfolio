@@ -121,27 +121,50 @@
     margin-top: 10px;
     font-size: 1rem;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
+    /* Contact Section */
+    .contact {
+        padding: 40px 15px; /* Reduce padding */
+    }
+
     .contact h2 {
-      font-size: 2rem;
+        font-size: 2rem; /* Reduce heading size */
+        margin-bottom: 15px;
     }
-  
+
     .contact p {
-      font-size: 1rem;
+        font-size: 1rem; /* Reduce text size */
+        margin-bottom: 20px;
     }
-  
+
+    /* Contact Info */
     .contact-item {
-      font-size: 1rem;
+        font-size: 1rem; /* Reduce text size */
     }
-  
+
     .contact-item .icon {
-      font-size: 1.3rem;
+        font-size: 1.3rem; /* Reduce icon size */
+        margin-right: 8px;
     }
-  
+
+    /* Contact Form */
     .contact-form {
-      padding: 20px;
+        padding: 30px; /* Reduce padding */
+        padding-right: 30px; /* Ensure padding is uniform */
     }
-  }
-  
+
+    .input-group input,
+    .input-group textarea {
+        padding: 10px; /* Reduce input padding */
+        font-size: 0.9rem; /* Reduce input font size */
+    }
+
+    .btn {
+        padding: 10px; /* Adjust button padding */
+        font-size: 0.9rem; /* Reduce button font size */
+    }
+
+    .success-message {
+        font-size: 0.9rem; /* Reduce message size */
+    }
+}

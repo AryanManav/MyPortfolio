@@ -55,3 +55,36 @@
     text-decoration: underline;
   }
   
+  @media (max-width: 768px) {
+    .about {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        padding-left: 1rem;
+        text-align: center;
+    }
+
+    .about p {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+
+    .aboutme {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center;
+        text-align: center;
+    }
+
+    .myphoto img {
+      display: none; /* Hide image on small screens */
+  }
+
+    .biginfo {
+        font-size: 1.2rem;
+    }
+}
