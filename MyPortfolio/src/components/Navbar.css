@@ -1,0 +1,136 @@
+/* Navbar Styling */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  padding: 12px 20px;
+  z-index: 1000; /* Ensure it's always on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo (Optional, can be replaced with a title) */
+.nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a8cf02;
+  text-transform: uppercase;
+}
+
+/* Navbar Links */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 1rem;
+}
+
+.nav li {
+  display: inline;
+}
+
+/* Navbar Link Styles */
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.nav a:hover {
+  color: #a8cf02;
+}
+
+/* Underline Effect for Active Section */
+.nav a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #a8cf02;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav a:hover::after, 
+.nav a.active::after {
+  width: 100%;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+}
+
+  
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    /* font-weight: bold; */
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #a8cf02;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .nav a:hover {
+    color: #a8cf02;
+  }
+  
+  .nav a:hover::after {
+    transform: scaleX(1);
+  }
+  
+/* Active Link Styling */
+.nav a.active {
+    color: #a8cf02;
+}
+
+.nav a.active::after {
+    width: 100%;
+}
+

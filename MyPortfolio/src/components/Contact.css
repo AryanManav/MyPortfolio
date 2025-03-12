@@ -1,0 +1,147 @@
+.contact {
+    font-family: "Montserrat", sans-serif;
+    background: #a8cf02;
+    padding: 60px 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact h2 {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out, transform 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .contact-item .icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #000000;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .contact-item:hover {
+    color: #5730fd;
+    transform: scale(1.05);
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 50px;
+    padding-right: 80px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-group {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .input-group input::placeholder,
+  .input-group textarea::placeholder {
+    font-family: "Montserrat", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .input-group textarea {
+    font-family: "Montserrat", sans-serif;
+    resize: none;
+  }
+  
+  .error {
+    font-family: "Montserrat", sans-serif;
+    color: #ff4d4d;
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    font-family: "Montserrat", sans-serif;
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #431fd4;
+  }
+  
+  .success-message {
+    color: #006400;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .contact h2 {
+      font-size: 2rem;
+    }
+  
+    .contact p {
+      font-size: 1rem;
+    }
+  
+    .contact-item {
+      font-size: 1rem;
+    }
+  
+    .contact-item .icon {
+      font-size: 1.3rem;
+    }
+  
+    .contact-form {
+      padding: 20px;
+    }
+  }
+  

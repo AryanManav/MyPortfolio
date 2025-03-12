@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HR:wght@100..400&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a8cf02;
+  border-radius: 10px;
+  mix-blend-mode: difference; /* Invert effect */
+  transition: background 0.3s ease-in-out;
+}
+
+/* Scrollbar on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20;
+  font-style: normal;
+}
+body{
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; 
+  cursor: default;
+  background-color: black;
+  
+}
