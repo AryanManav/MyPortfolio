@@ -1,0 +1,380 @@
+.resume{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  
+  .vert{
+    word-wrap: break-word;
+    text-align: center;
+    width: 4rem;
+    font-size: 10rem;
+    font-weight: bolder;
+    margin-right: 50px;
+    padding: 10px;
+    /* background-color: #a8cf02; */
+    color: black;
+    /* border-radius: 10px; */
+  
+  }
+  
+  .skills{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .skills h2{
+    font-size: 3rem;
+    margin-top: 3rem;
+    
+  }
+  
+  /* Skills info cards */
+  .skillInfo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Exactly 5 columns */
+    gap: 20px;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  
+  .sk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    background-color: #1e1e1e; /* Dark theme */
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Subtle background glow effect */
+  .sk::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 250%;
+    height: 250%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 10%, transparent 70%);
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+  }
+  
+  .sk:hover::before {
+    transform: scale(1);
+  }
+  
+  /* Smooth lift & glow effect */
+  .sk:hover {
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    background: rgba(30, 30, 30, 0.9);
+  }
+  
+  /* Text styling */
+  .sk p {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Icon/image animation */
+  .sk img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  /* Rotate & scale on hover */
+  .sk:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sk {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+  
+    .sk p {
+      font-size: 15px;
+    }
+  
+    .sk img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  
+  /* projects */
+  
+  .projects{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .projects h2{
+    font-size: 3rem;
+    /* margin-top: 3rem; */
+    
+  }
+  
+  .projectinfo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    
+  }
+  .project-card {
+    background-color: #121212; /* Dark theme */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Light reflection effect */
+  .project-card::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 250%;
+    height: 250%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 60%);
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+  }
+  
+  .project-card:hover::before {
+    transform: scale(1);
+  }
+  
+  /* Smooth hover lift & glow */
+  .project-card:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.25);
+    background: rgba(30, 30, 30, 0.9);
+  }
+  
+  /* Heading styling */
+  .project-card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  /* Description text */
+  .project-card p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    opacity: 0.85;
+  }
+  
+  /* Button styles */
+  .project-card a {
+    display: inline-block;
+    padding: 8px 15px;
+    color: #a8cf02;
+    text-decoration: none;
+    border: 1px solid #a8cf02;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .project-card a:hover {
+    background-color: #a8cf02;
+    color: black;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .project-card {
+      width: 100%;
+      max-width: 280px;
+    }
+  
+    .project-card h3 {
+      font-size: 20px;
+    }
+  
+    .project-card p {
+      font-size: 14px;
+    }
+  
+    .project-card a {
+      padding: 7px 14px;
+    }
+  }
+  
+  /* Education */
+  
+  .education{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .education h2{
+    font-size: 3rem;
+    margin-top: 3rem;
+    
+  }
+  
+  
+  .educationinfo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    margin-top: 30px;
+  }
+  
+  .education-card {
+    background-color: #121212; /* Dark theme */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Subtle light reflection effect */
+  .education-card::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 250%;
+    height: 250%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 60%);
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+  }
+  
+  .education-card:hover::before {
+    transform: scale(1);
+  }
+  
+  /* Smooth hover lift & glow */
+  .education-card:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.25);
+    background: rgba(30, 30, 30, 0.9);
+  }
+  
+  /* Heading styling */
+  .education-card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  /* Description text */
+  .education-card p {
+    font-size: 15px;
+    margin-bottom: 8px;
+    opacity: 0.85;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .education-card {
+      width: 100%;
+      max-width: 280px;
+    }
+  
+    .education-card h3 {
+      font-size: 20px;
+    }
+  
+    .education-card p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Certifications */
+  
+  .certifications{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .certifications h2{
+    font-size: 3rem;
+    margin-top: 3rem;
+    
+  }
+  
+  .certi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    /* background: #1a1a1a; */
+    /* border-radius: 12px; */
+    /* width: 80%; */
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .certi ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .certi ul li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.3s ease, background 0.3s ease;
+    color: #000000;
+  }
+  
+  .certi ul li:hover {
+    background: #a8cf02;
+    color: #121212;
+    transform: scale(1.05);
+  }
+  
+  
+  

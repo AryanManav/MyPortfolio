@@ -1,0 +1,43 @@
+.aryan, .manav {
+    font-size: var(--font-size-large);
+    
+  }
+  
+  .aryan {
+    color: var(--primary-color);
+    font-weight: bolder;
+  }
+  
+  .manav {
+    padding-left: var(--spacing-large);
+    color: var(--secondary-color);
+    padding-bottom: var(--spacing-small);
+  }
+  
+  .container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-dark);
+    height: 100vh;
+  
+  }
+  
+  .left, .right {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .left {
+    margin-left: var(--spacing-large);
+    cursor: default;
+  }
+  
+  .right {
+    margin-top: 58px;
+    margin-right: var(--spacing-large);
+  }
+  

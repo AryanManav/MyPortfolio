@@ -1,0 +1,57 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    background-color: #a8cf02;
+    text-align: left;
+  }
+  
+  .about h2{
+    font-size: 3rem;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    text-align: left;
+  }
+  
+  
+  .about p{
+    font-weight: 500;
+    padding: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: left;
+  }
+  
+  .myphoto img{
+    
+    width: 50vw;
+  }
+  .aboutsect{
+    background-color: #a8cf02;
+    
+  }
+  
+  .aboutme{
+    display: flex;
+  }
+  
+  .smallinfo{
+    font-size: 1rem;
+  }
+  .biginfo{
+    font-size: 1.8rem;
+  }
+  
+  .about a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .about a:hover {
+    color: #1600fb;
+    text-decoration: underline;
+  }
+  
