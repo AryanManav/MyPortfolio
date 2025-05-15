@@ -22,7 +22,7 @@ A sleek, modern personal portfolio website built with **React.js** and **Next.js
 
 ## 🛠️ Tech Stack & Tools
 
-- **Frontend:** React.js, Next.js  
+- **Frontend:** React.js
 - **Version Control:** GitHub  
 - **Deployment:** Vercel  
 
