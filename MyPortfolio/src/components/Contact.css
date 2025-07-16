@@ -1,11 +1,15 @@
 .contact {
   background: linear-gradient(to top, var(--white-90), var(--white-100));
   padding: var(--spacing-large);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
 }
 
 .contact-card {
   background: var(--black-90);
-  border-radius: 3px;
+  border-radius: var(--border-radius-small);
   padding: var(--spacing-large);
   max-width: 800px;
   width: 100%;
@@ -29,6 +33,8 @@
   font-size: var(--font-size-small);
   color: var(--white-80);
   margin-bottom: var(--spacing-medium);
+  text-align: center;
+  padding: 0 var(--spacing-small);
 }
 
 .contact-details-row {
@@ -44,6 +50,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .contact-icon {
@@ -56,6 +65,7 @@
   text-decoration: none;
   font-weight: var(--font-weight-medium);
   transition: color 0.3s ease;
+  word-break: break-word;
 }
 
 .contact-line a:hover {
@@ -73,6 +83,7 @@
   justify-content: center;
   gap: 25px;
   font-size: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .social-icons a {
@@ -85,10 +96,10 @@
   transform: translateY(-3px);
 }
 
-/* Responsive */
+/* === Responsive === */
 @media (max-width: 768px) {
   .contact {
-    height: auto;
+    padding: var(--spacing-medium);
   }
 
   .contact-card {
@@ -96,10 +107,40 @@
   }
 
   .contact-title {
-    font-size: calc(var(--font-size-medium) - 1rem);
+    font-size: var(--font-size-regular);
   }
 
   .contact-subtitle {
     font-size: var(--font-size-xsmall);
+    padding: 0 var(--spacing-xsmall);
+  }
+
+  .contact-line {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .social-icons {
+    gap: 20px;
+    font-size: 1.3rem;
+    margin-top: var(--spacing-small);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: calc(var(--font-size-regular) - 0.4rem);
+  }
+
+  .contact-subtitle {
+    font-size: var(--font-size-xsmall);
+  }
+
+  .contact-line a {
+    font-size: var(--font-size-xsmall);
+  }
+
+  .contact-card {
+    padding: var(--spacing-small);
   }
 }

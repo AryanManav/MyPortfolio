@@ -2,9 +2,9 @@
   background: linear-gradient(to right, var(--primary-color) 60%, var(--primary-dark));
   padding: var(--spacing-large) var(--spacing-small);
   color: var(--black-100);
-  font-family: "Montserrat", sans-serif;
 }
 
+/* === Headings === */
 .about h2 {
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-normal);
@@ -26,6 +26,7 @@
   color: var(--black-90);
 }
 
+/* === CV Button === */
 .cv-button {
   display: inline-block;
   padding: 10px 20px;
@@ -42,22 +43,23 @@
   color: var(--black-100);
 }
 
-/* About Cards */
+/* === About Cards === */
 .about-cards-row {
   margin-top: var(--spacing-medium);
 }
 
 .about-card {
   background: var(--white-100);
-  padding: 25px;
-  border-radius: 3px;
+  padding: var(--spacing-small);
+  border-radius: var(--border-radius-small);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
 }
 
 .about-card:hover {
   transform: translateY(-2px);
-  /* box-shadow: var(--shadow-strong); */
 }
 
 .card-title {
@@ -68,7 +70,7 @@
 
 .card-subtitle {
   font-size: var(--font-size-xsmall);
-  margin-top: 10px;
+  margin-top: var(--spacing-xsmall);
   color: var(--black-90);
 }
 
@@ -76,4 +78,51 @@
   font-size: var(--font-size-xsmall);
   color: var(--text-muted);
   margin-top: 5px;
+}
+
+/* === Responsive === */
+@media (max-width: 992px) {
+  .about {
+    text-align: center;
+  }
+
+  .biginfo,
+  .smallinfo {
+    text-align: center;
+    margin: 0 auto var(--spacing-small);
+  }
+
+  .cv-button {
+    margin-top: var(--spacing-small);
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutsect {
+  background: linear-gradient(to bottom, var(--primary-color) 60%, var(--primary-dark));
+}
+  .about h2 {
+    font-size: var(--font-size-regular);
+  }
+
+  .biginfo {
+    font-size: var(--font-size-xsmall);
+    max-width: 100%;
+    padding: 0 var(--spacing-xsmall);
+  }
+
+  .smallinfo {
+    font-size: var(--font-size-xsmall);
+  }
+
+  .about-card {
+    margin-bottom: var(--spacing-small);
+  }
+
+  .about-cards-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-small);
+  }
 }

@@ -26,7 +26,7 @@ const About = () => {
         {/* Bottom: About Cards */}
         <div className="row justify-content-center about-cards-row">
 
-          <div className="col-md-4 col-sm-6 mb-4">
+          <div className="col-md-4 col-sm-6">
             <div className="about-card text-center">
               <h4 className="card-title">NIT Delhi</h4>
               <p className="card-subtitle">B.Tech in Electrical Engineering</p>
@@ -34,7 +34,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="col-md-4 col-sm-6 mb-4">
+          <div className="col-md-4 col-sm-6">
             <div className="about-card text-center">
               <h4 className="card-title">Coding Achievements</h4>
               <p className="card-subtitle">120+ LeetCode, GFG, TakeUForward</p>
@@ -42,7 +42,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="col-md-4 col-sm-6 mb-4">
+          <div className="col-md-4 col-sm-6">
             <div className="about-card text-center">
               <h4 className="card-title">Tech Stack</h4>
               <p className="card-subtitle">MERN, SCSS, Bootstrap</p>

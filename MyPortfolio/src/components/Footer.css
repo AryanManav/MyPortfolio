@@ -1,9 +1,7 @@
-/* footer  */
 
-/* Footer Styles */
 .footer {
   background: #0A0A0A;
-  color: #fff;
+  color: var(--white-80);
   padding: 50px 20px;
   font-size: 16px;
   text-align: center;
@@ -16,15 +14,10 @@
 .footer-bottom {
   margin-top: 20px;
   padding-top: 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
   font-size: var(--font-size-xsmall);
   font-weight: var(--font-weight-light);
   opacity: 0.7;
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Fade-in Effect */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 0.7; }
-}

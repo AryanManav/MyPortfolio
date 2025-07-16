@@ -31,9 +31,9 @@
 .nav a {
   text-decoration: none;
   color: white;
-  font-weight: 500;
+  font-weight: var(--font-weight-light);
     font-size: var(--font-size-xsmall);
-  padding: 5px;
+  /* padding: 5px; */
   transition: color 0.3s ease, transform 0.2s ease;
   position: relative;
 }
@@ -47,7 +47,7 @@
 .nav a::after {
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   width: 0%;
   background-color: #a8cf02;
   transition: width 0.3s ease-in-out;
@@ -66,7 +66,7 @@
 .hamburger {
   display: none;
   font-size: 28px;
-  color: white;
+  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -81,11 +81,13 @@
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 60px;
-    left: 0;
-    background: rgba(0, 0, 0, 0.9);
+    top: 42px;
+    left: -10px;
+    background: rgba(0, 0, 0, 0.8); 
     padding: 10px 0;
     text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
   }
 
   .nav ul.open {

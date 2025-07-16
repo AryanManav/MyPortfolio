@@ -3,7 +3,7 @@
 }
 
 .resume{
-  /* padding-top: 100px; */
+  padding: var(--spacing-large);
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -375,7 +375,6 @@
   .certi ul li:hover {
     background: #a8cf02;
     color: #121212;
-    transform: scale(1.01);
   }
   
   
@@ -388,8 +387,10 @@
     }
 
     .vert {
-        font-size: 4rem; /* Reduce size */
+      border: none; /* Remove border for smaller screens */
+        font-size: 3rem; /* Reduce size */
         width: auto;
+        font-weight: normal;
         margin-right: 0;
         margin-bottom: 10px;
     }
@@ -411,10 +412,6 @@
       margin: auto; /* Centers the grid itself */
     }
 
-    .sk {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
 
     .sk p {
         font-size: 10px;
@@ -490,8 +487,10 @@
   }
 
   .vert {
-    font-size: 5rem; /* Reduce size */
+    border: none; /* Remove border for smaller screens */
+    font-size: 3rem;
     width: auto;
+    font-weight: var(--font-weight-normal);
     margin-right: 0;
     margin-bottom: 10px;
   }
@@ -511,95 +510,4 @@
     width: max-content; /* Adjusts the width to fit the content */
     margin: auto; /* Centers the grid itself */
   }
-}
-
-
-/* Import AOS animation library */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css');
-
-/* Smooth scrolling effect */
-html {
-  scroll-behavior: smooth;
-}
-
-/* General animation settings */
-[data-aos] {
-  transition: all 0.8s ease-in-out;
-}
-
-/* Fade animations */
-[data-aos="fade-down"] {
-  transform: translateY(-20px);
-  opacity: 0;
-}
-[data-aos="fade-down"].aos-animate {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-[data-aos="fade-up"] {
-  transform: translateY(20px);
-  opacity: 0;
-}
-[data-aos="fade-up"].aos-animate {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-/* Left and right animations */
-[data-aos="fade-left"] {
-  transform: translateX(-20px);
-  opacity: 0;
-}
-[data-aos="fade-left"].aos-animate {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-[data-aos="fade-right"] {
-  transform: translateX(20px);
-  opacity: 0;
-}
-[data-aos="fade-right"].aos-animate {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-/* Zoom-in effect */
-[data-aos="zoom-in"] {
-  transform: scale(0.9);
-  opacity: 0;
-}
-[data-aos="zoom-in"].aos-animate {
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* Flip effects */
-[data-aos="flip-left"] {
-  transform: rotateY(90deg);
-  opacity: 0;
-}
-[data-aos="flip-left"].aos-animate {
-  transform: rotateY(0);
-  opacity: 1;
-}
-
-[data-aos="flip-right"] {
-  transform: rotateY(-90deg);
-  opacity: 0;
-}
-[data-aos="flip-right"].aos-animate {
-  transform: rotateY(0);
-  opacity: 1;
-}
-
-/* Slide animations */
-[data-aos="slide-up"] {
-  transform: translateY(50px);
-  opacity: 0;
-}
-[data-aos="slide-up"].aos-animate {
-  transform: translateY(0);
-  opacity: 1;
 }
