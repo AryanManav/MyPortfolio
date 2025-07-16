@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import cv from './Aryan-CV.pdf';
+import cv from './Aryan_Manav_Resume_UI_SDE_2025.pdf';
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
             </p>
             <p className="smallinfo">New Delhi, Delhi</p>
 
-            <a href={cv} download="Aryan_Manav_CV.pdf" className="cv-button mt-4">
+            <a href={cv} download="Aryan_Manav_Resume.pdf" className="cv-button mt-4">
               Download CV
             </a>
           </div>
