@@ -4,22 +4,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
-  padding: 12px 20px;
-  z-index: 1000; /* Ensure it's always on top */
+  background: rgba(0, 0, 0, 0.8); 
+  padding: 5px;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  backdrop-filter: blur(10px); 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Logo (Optional, can be replaced with a title) */
-.nav .logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #a8cf02;
-  text-transform: uppercase;
 }
 
 /* Navbar Links */
@@ -28,7 +20,7 @@
   display: flex;
   gap: 25px;
   padding: 0;
-  margin: 1rem;
+  margin: 10px;
 }
 
 .nav li {
@@ -40,8 +32,8 @@
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 16px;
-  padding: 10px 15px;
+    font-size: var(--font-size-xsmall);
+  padding: 5px;
   transition: color 0.3s ease, transform 0.2s ease;
   position: relative;
 }

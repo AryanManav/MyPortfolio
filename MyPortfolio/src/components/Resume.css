@@ -1,7 +1,10 @@
+.resume-container{
+  background-color: var(--white-100);
+}
+
 .resume{
-  padding-top: 100px;
+  /* padding-top: 100px; */
     display: flex;
-    background-color: white;
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -14,10 +17,10 @@
     font-size: 10rem;
     font-weight: bolder;
     margin-right: 50px;
-    padding: 10px;
-    /* background-color: #a8cf02; */
+    padding: 0 10px;
+    border-left: #a8cf02 3px solid;
+    border-radius: 3px;
     color: black;
-    /* border-radius: 10px; */
   
   }
   
@@ -28,9 +31,8 @@
   }
   
   .skills h2{
-    font-size: 3rem;
-    margin-top: 3rem;
-    
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-light);
   }
   
   /* Skills info cards */
@@ -39,7 +41,7 @@
     grid-template-columns: repeat(5, 1fr); /* Exactly 5 columns */
     gap: 20px;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 3px;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -53,9 +55,9 @@
     justify-content: center;
     width: 7rem;
     height: 7rem;
-    background-color: #1e1e1e; /* Dark theme */
+    background-color: #1e1e1e; 
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 3px;
     transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     text-align: center;
@@ -90,8 +92,8 @@
   /* Text styling */
   .sk p {
     color: white;
-    font-size: 17px;
-    font-weight: 600;
+    font-size: var(--font-size-xsmall);
+    font-weight: var(--font-weight-light);
     margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -135,9 +137,8 @@
     
   }
   .projects h2{
-    font-size: 3rem;
-    /* margin-top: 3rem; */
-    
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-light);
   }
   
   .projectinfo {
@@ -151,7 +152,7 @@
     background-color: #121212; /* Dark theme */
     color: white;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 3px;
     width: 300px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
@@ -187,15 +188,16 @@
   /* Heading styling */
   .project-card h3 {
     margin-bottom: 10px;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-normal);
     transition: color 0.3s ease;
   }
   
   /* Description text */
   .project-card p {
-    font-size: 15px;
+    font-size: var(--font-size-xsmall);
     margin-bottom: 15px;
+    color: var(--white-100);
     opacity: 0.85;
   }
   
@@ -206,7 +208,7 @@
     color: #a8cf02;
     text-decoration: none;
     border: 1px solid #a8cf02;
-    border-radius: 5px;
+    border-radius: 3x;
     font-weight: 600;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
   }
@@ -246,7 +248,8 @@
     
   }
   .education h2{
-    font-size: 3rem;
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-light) ;
     margin-top: 3rem;
     
   }
@@ -264,7 +267,7 @@
     background-color: #121212; /* Dark theme */
     color: white;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 3px;
     width: 300px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.15);
@@ -300,14 +303,14 @@
   /* Heading styling */
   .education-card h3 {
     margin-bottom: 10px;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: var(--font-size-small);
+    font-weight: normal;
     transition: color 0.3s ease;
   }
   
   /* Description text */
   .education-card p {
-    font-size: 15px;
+    font-size: var(--font-size-xsmall);
     margin-bottom: 8px;
     opacity: 0.85;
   }
@@ -336,7 +339,8 @@
     
   }
   .certifications h2{
-    font-size: 3rem;
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-light);
     margin-top: 3rem;
     
   }
@@ -347,10 +351,7 @@
     align-items: flex-start;
     gap: 40px;
     flex-wrap: wrap;
-    /* padding: 20px; */
-    /* background: #1a1a1a; */
-    /* border-radius: 12px; */
-    /* width: 80%; */
+
     margin: 20px auto;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
   }
@@ -364,9 +365,9 @@
     background: rgba(255, 255, 255, 0.1);
     padding: 12px 20px;
     margin: 10px 0;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
+    border-radius: 3x;
+    font-size: var(--font-size-xsmall);
+    font-weight: var(--font-weight-light);
     transition: transform 0.3s ease, background 0.3s ease;
     color: #000000;
   }
@@ -374,7 +375,7 @@
   .certi ul li:hover {
     background: #a8cf02;
     color: #121212;
-    transform: scale(1.05);
+    transform: scale(1.01);
   }
   
   

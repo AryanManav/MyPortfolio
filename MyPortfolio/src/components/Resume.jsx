@@ -12,7 +12,8 @@ const Resume = () => {
   }, []);
 
   return (
-    <div id="resume" className="resume">
+    <div className="resume-container">
+      <div id="resume" className="container resume">
       <div className="vert" data-aos="fade-down">RESUME</div>
 
       <div className="bigcont">
@@ -24,7 +25,7 @@ const Resume = () => {
             {[
               { name: "HTML", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
               { name: "CSS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-              { name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+              { name: "JS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
               { name: "SCSS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" },
               { name: "ReactJS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
               { name: "NodeJS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
@@ -87,7 +88,7 @@ const Resume = () => {
         {/* Certifications Section */}
         <div className="container6" data-aos="fade-up">
           <div className="certifications">
-            <h2>Certifications & Achievements</h2>
+            <h2>Achievements</h2>
             <div className="certi">
               <ul className="set1" data-aos="fade-right">
                 <li>• Certified Full-Stack Developer – Intellipaat/Udemy</li>
@@ -101,6 +102,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

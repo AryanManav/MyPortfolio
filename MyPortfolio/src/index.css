@@ -1,10 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HR:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sigmar+One&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
-*{
+
+/* Global Styles */
+:root {
+  /* === Core Brand Colors === */
+  --primary-color: #a8cf02;
+  --primary-light: #c9e66b;
+  --primary-lighter: #e4f5b8;
+  --primary-dark: #7fa100;
+  --primary-darker: #5d7800;
+
+  --secondary-color: aliceblue;
+
+  /* === Backgrounds === */
+  --black-100: #000000;
+  /* Pure black */
+  --black-90: #0a0a0a;
+  --black-80: #1a1a1a;
+  --black-70: #2a2a2a;
+  --black-60: #3a3a3a;
+  --black-50: #4a4a4a;
+  /* Medium dark */
+  --black-40: #5a5a5a;
+  --black-30: #6a6a6a;
+  --black-20: #7a7a7a;
+  --black-10: #8a8a8a;
+  --white-100: #ffffff;
+  /* Pure white */
+  --white-95: #f9f9f9;
+  /* Near-white */
+  --white-90: #f2f2f2;
+  --white-85: #eaeaea;
+  --white-80: #e0e0e0;
+  --white-70: #d6d6d6;
+  /* Light gray */
+  --white-60: #cccccc;
+  --white-50: #c2c2c2;
+
+  /* === Text Colors === */
+  --text-dark: #000;
+  --text-light: #fff;
+  --text-muted: #777;
+  --text-subtle: #aaa;
+
+  /* === Font Sizes === */
+  --font-size-xxlarge: 12rem;
+  --font-size-xlarge: 9rem;
+  --font-size-large: 6rem;
+  --font-size-medium: 3.5rem;
+  --font-size-regular: 2rem;
+  --font-size-small: 1.2rem;
+  --font-size-xsmall: 0.9rem;
+
+  /* === Font Weights === */
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  /* === Spacing === */
+  --spacing-xxlarge: 120px;
+  --spacing-xlarge: 100px;
+  --spacing-large: 60px;
+  --spacing-medium: 30px;
+  --spacing-small: 20px;
+  --spacing-xsmall: 10px;
+
+  /* === Borders & Radius === */
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 16px;
+  --border-radius-round: 50%;
+
+  /* === Special === */
+  --cursor-size: 40px;
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 6px 20px rgba(0, 0, 0, 0.2);
+  --shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+* {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -18,7 +105,8 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #a8cf02;
   border-radius: 10px;
-  mix-blend-mode: difference; /* Invert effect */
+  mix-blend-mode: difference;
+  /* Invert effect */
   transition: background 0.3s ease-in-out;
 }
 
@@ -26,16 +114,18 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: white;
 }
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 20;
   font-style: normal;
 }
-body{
+
+body {
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   cursor: default;
   background-color: black;
-  
+
 }
