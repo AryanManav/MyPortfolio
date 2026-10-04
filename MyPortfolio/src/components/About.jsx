@@ -1,56 +1,39 @@
-import React from 'react';
-import './About.css';
-import cv from './Aryan_Manav_Resume_UI_SDE_2025.pdf';
+import { STATS } from "../data.js";
+import "./About.css";
 
 const About = () => {
   return (
-    <section id="aboutsect" className="aboutsect">
-      <div className="container">
+    <section id="about" className="section about">
+      <div className="container about-grid">
+        <div>
+          <header className="section-head reveal">
+            <span className="eyebrow">01 · About</span>
+            <h2 className="section-title">
+              I care about the details people <em>feel</em> but rarely notice.
+            </h2>
+          </header>
 
-        {/* Top: About Me full width */}
-        <div className="row mb-5">
-          <div className="about col-12 text-center">
-            <h2>About Me</h2>
-            <p className="biginfo">
-              I'm a B.Tech student in Electrical Engineering at NIT Delhi with a passion for MERN stack development,
-              problem-solving, and building clean, scalable web applications. I thrive on writing efficient code and crafting smooth UI/UX experiences.
+          <div className="about-copy reveal" style={{ "--delay": "100ms" }}>
+            <p>
+              I'm a B.Tech student in Electrical Engineering at NIT Delhi, and most of my time goes into building for the
+              web with the MERN stack. I like taking an interface from a Figma frame to production code that is quick to
+              load, easy to maintain and comfortable to use.
             </p>
-            <p className="smallinfo">New Delhi, Delhi</p>
-
-            <a href={cv} download="Aryan_Manav_Resume.pdf" className="cv-button mt-4">
-              Download CV
-            </a>
+            <p>
+              Outside of product work I practise problem-solving on LeetCode and GeeksforGeeks, take part in hackathons and
+              contribute to open source.
+            </p>
           </div>
         </div>
 
-        {/* Bottom: About Cards */}
-        <div className="row justify-content-center about-cards-row">
-
-          <div className="col-md-4 col-sm-6">
-            <div className="about-card text-center">
-              <h4 className="card-title">NIT Delhi</h4>
-              <p className="card-subtitle">B.Tech in Electrical Engineering</p>
-              <p className="card-meta">GPA: 7.88</p>
+        <dl className="stats">
+          {STATS.map((stat, i) => (
+            <div className="stat reveal" key={stat.label} style={{ "--delay": `${i * 80}ms` }}>
+              <dt>{stat.label}</dt>
+              <dd>{stat.value}</dd>
             </div>
-          </div>
-
-          <div className="col-md-4 col-sm-6">
-            <div className="about-card text-center">
-              <h4 className="card-title">Coding Achievements</h4>
-              <p className="card-subtitle">120+ LeetCode, GFG, TakeUForward</p>
-              <p className="card-meta">Hackathons & Open Source</p>
-            </div>
-          </div>
-
-          <div className="col-md-4 col-sm-6">
-            <div className="about-card text-center">
-              <h4 className="card-title">Tech Stack</h4>
-              <p className="card-subtitle">MERN, SCSS, Bootstrap</p>
-              <p className="card-meta">Socket.io, Git, Vercel</p>
-            </div>
-          </div>
-
-        </div>
+          ))}
+        </dl>
       </div>
     </section>
   );

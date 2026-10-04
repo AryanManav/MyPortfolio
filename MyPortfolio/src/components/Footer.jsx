@@ -1,15 +1,14 @@
-import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { PiArrowUp } from "react-icons/pi";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="text-light">
-      <div className="container">
-
-        {/* Footer Bottom */}
-        <div className="text-center p-2">
-          <p className="mb-0">© 2025 Aryan Manav. All Rights Reserved.</p>
-        </div>
+    <footer className="footer">
+      <div className="container footer-inner">
+        <p>© {new Date().getFullYear()} Aryan Manav. Designed and built by me.</p>
+        <a href="#home" className="back-top">
+          Back to top <PiArrowUp aria-hidden="true" />
+        </a>
       </div>
     </footer>
   );

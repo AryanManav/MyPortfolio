@@ -1,0 +1,69 @@
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(48px, 7vw, 96px);
+}
+
+.edu-list,
+.achievements {
+  border-top: 1px solid var(--line);
+}
+
+.edu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-block: 26px;
+  border-bottom: 1px solid var(--line);
+}
+
+.edu-school {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.edu-degree {
+  margin-top: 4px;
+  color: var(--text-muted);
+}
+
+.edu-score {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  padding: 5px 12px;
+  border: 1px solid rgba(168, 207, 2, 0.3);
+  border-radius: 999px;
+  font-variant-numeric: tabular-nums;
+}
+
+.achievements li {
+  position: relative;
+  padding: 22px 0 22px 34px;
+  border-bottom: 1px solid var(--line);
+  color: var(--text-muted);
+}
+
+.achievements li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 32px;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  background: var(--accent);
+  transform: rotate(45deg);
+}
+
+.resume-btn {
+  margin-top: 32px;
+}
+
+@media (max-width: 900px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+}

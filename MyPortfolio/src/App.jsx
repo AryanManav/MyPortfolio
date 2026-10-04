@@ -1,31 +1,31 @@
-import { useEffect, useRef, useState } from "react";
-import "./App.css";
-import Navbar from "./components/Navbar.jsx"
-import Contact from "./components/Contact.jsx"
-import Footer from "./components/Footer.jsx"
-import Resume from "./components/Resume.jsx"
-import Home from "./components/Home.jsx"
-import About from "./components/About.jsx"
-import WorkExperience from "./components/WorkExperience.jsx"
+import Navbar from "./components/Navbar.jsx";
+import Home from "./components/Home.jsx";
+import About from "./components/About.jsx";
+import WorkExperience from "./components/WorkExperience.jsx";
+import Projects from "./components/Projects.jsx";
+import Skills from "./components/Skills.jsx";
+import Resume from "./components/Resume.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
+import useReveal from "./hooks/useReveal.js";
 
 function App() {
-  const cursorRef = useRef(null);
-  const position = useRef({ x: 0, y: 0 });
-  const target = useRef({ x: 0, y: 0 });
-  const requestRef = useRef(null);
-  const [expandedSection, setExpandedSection] = useState(null);
-
+  useReveal();
 
   return (
     <>
-      <div ref={cursorRef} className="custom-cursor"></div>
+      <a href="#main" className="skip-link">Skip to content</a>
       <Navbar />
-      <Home />
-      <About />
-      <WorkExperience />
-      <Resume />
-      <Contact/>
-      <Footer/>
+      <main id="main">
+        <Home />
+        <About />
+        <WorkExperience />
+        <Projects />
+        <Skills />
+        <Resume />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }

@@ -1,32 +1,40 @@
-import React from "react";
+import { EXPERIENCE } from "../data.js";
 import "./WorkExperience.css";
 
 const WorkExperience = () => {
   return (
-    <section id="experience" className="experience-section">
+    <section id="experience" className="section">
       <div className="container">
-        <h2 className="experience-heading">Work Experience</h2>
+        <header className="section-head reveal">
+          <span className="eyebrow">02 · Experience</span>
+          <h2 className="section-title">Where I've worked</h2>
+        </header>
 
-        <div className="experience-item">
-          <h3 className="role">UI/UX & Web Design Intern</h3>
-          <span className="company">Acro Engineering Company</span>
-          <span className="duration">Jun 2025 – Present</span>
-          <ul className="details">
-            <li>Designed scalable UI using Bootstrap 5 and Figma.</li>
-            <li>Developed 20+ reusable React components.</li>
-            <li>Participated in Agile sprints and iterative testing.</li>
-          </ul>
-        </div>
+        <ol className="timeline">
+          {EXPERIENCE.map((job, i) => (
+            <li className="job reveal" key={job.company} style={{ "--delay": `${i * 100}ms` }}>
+              <div className="job-meta">
+                <span className="job-period">{job.period}</span>
+                {i === 0 && <span className="job-badge">Current</span>}
+              </div>
 
-        <div className="experience-item">
-          <h3 className="role">SCSS Framework & CSS Migration</h3>
-          <span className="company">DWA Commerce</span>
-          <span className="duration">Jan 2024 – Mar 2024</span>
-          <ul className="details">
-            <li>Built a modular SCSS framework for Limitless CSS 4.0.</li>
-            <li>Improved responsiveness & cross-browser compatibility.</li>
-          </ul>
-        </div>
+              <div className="job-body">
+                <h3 className="job-role">{job.role}</h3>
+                <p className="job-company">{job.company}</p>
+                <ul className="job-points">
+                  {job.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+                <div className="job-tags">
+                  {job.tags.map((tag) => (
+                    <span className="chip" key={tag}>{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );

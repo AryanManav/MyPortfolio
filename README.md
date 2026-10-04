@@ -1,54 +1,50 @@
-# 🌟 Personal Portfolio Website
+# Aryan Manav · Portfolio
 
-A sleek, modern personal portfolio website built with **React.js** and **Next.js** to showcase projects, skills, and contact information. Designed with an interactive UI and deployed on **Vercel** for fast, reliable performance.
+My personal portfolio: a single-page site showing my experience, projects, skills and contact details.
 
----
-
-## 🚀 Features
-
-- **📁 Projects Showcase**  
-  Display of various personal and professional projects with descriptions and links.
-
-- **💼 Skills Section**  
-  Highlights key technical skills and tools.
-
-- **📬 Contact Details**  
-  Easy access to contact information for networking and opportunities.
-
-- **⚡ Interactive UI**  
-  Responsive design with smooth navigation and animations.
+**Live:** https://aryan-portfolio-pi.vercel.app/
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## Features
 
-- **Frontend:** React.js
-- **Version Control:** GitHub  
-- **Deployment:** Vercel  
+- **Projects** with screenshots, tech stacks and live links
+- **Experience timeline**, skills grouped by area, education and achievements
+- **Scroll-aware navigation** that highlights the section you're reading, with an accessible mobile menu
+- **Scroll reveal animations** that respect `prefers-reduced-motion`
+- **SEO and social previews** through meta and Open Graph tags
+- **Lightweight:** no UI framework, about 5 KB of gzipped CSS and WebP images
 
----
+## Tech stack
 
-## 📂 Project Structure
+- **Frontend:** React 18 + Vite
+- **Styling:** hand-written CSS with a small token-based design system
+- **Icons:** Phosphor (`react-icons/pi`) and Devicon
+- **Deployment:** Vercel
 
-## MyPortfolio
+## Project structure
 
-- **public/**
-  - logo.png
-  - vite.svg
+```
+MyPortfolio/
+├── public/              favicon, Open Graph image
+├── src/
+│   ├── assets/          WebP images
+│   ├── components/      one component + stylesheet per section
+│   ├── hooks/           useReveal (scroll animations)
+│   ├── data.js          all site content (profile, projects, skills, ...)
+│   ├── App.jsx
+│   ├── index.css        design tokens and global styles
+│   └── main.jsx
+├── index.html
+└── vite.config.js
+```
 
-- **src/**
-  - **assets/** *(Additional assets)*
-  - **components/** *(React components)*
-  - App.css
-  - App.jsx *(Main React component)*
-  - aryannormal.jpg
-  - index.css
-  - main.jsx *(Entry point)*
+To update content (projects, experience, resume link), edit `src/data.js`.
 
-- .gitignore
-- README.md *(Project documentation)*
-- eslint.config.js *(ESLint configuration)*
-- index.html *(HTML template)*
-- package-lock.json *(Dependency lock file)*
-- package.json *(NPM dependencies)*
-- vite.config.js *(Vite configuration)*
+## Running locally
+
+```bash
+cd MyPortfolio
+npm install
+npm run dev
+```
