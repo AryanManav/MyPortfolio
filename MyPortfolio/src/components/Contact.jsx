@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { PiCheck, PiCopy, PiGithubLogo, PiLinkedinLogo, PiPhone } from "react-icons/pi";
+import { SiLeetcode } from "react-icons/si";
 import { PROFILE } from "../data.js";
 import "./Contact.css";
 
@@ -52,6 +53,9 @@ const Contact = () => {
               </a>
               <a href={PROFILE.github} target="_blank" rel="noopener noreferrer" className="icon-link" aria-label="GitHub">
                 <PiGithubLogo />
+              </a>
+              <a href={PROFILE.leetcode} target="_blank" rel="noopener noreferrer" className="icon-link" aria-label="LeetCode">
+                <SiLeetcode />
               </a>
             </div>
           </div>

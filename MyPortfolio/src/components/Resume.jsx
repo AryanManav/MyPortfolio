@@ -18,6 +18,7 @@ const Resume = () => {
                 <div>
                   <h3 className="edu-school">{edu.school}</h3>
                   <p className="edu-degree">{edu.degree}</p>
+                  <p className="edu-period">{edu.period} · {edu.location}</p>
                 </div>
                 <span className="edu-score">{edu.score}</span>
               </li>

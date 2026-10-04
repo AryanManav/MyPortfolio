@@ -28,6 +28,13 @@
   color: var(--text-muted);
 }
 
+.edu-period {
+  margin-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-subtle);
+}
+
 .edu-score {
   flex-shrink: 0;
   font-family: var(--font-mono);

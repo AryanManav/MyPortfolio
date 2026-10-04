@@ -54,6 +54,11 @@
   font-weight: 500;
 }
 
+.job-location {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
 .job-points {
   margin-top: 20px;
   display: grid;

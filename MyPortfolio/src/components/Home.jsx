@@ -1,5 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import { PiArrowUpRight, PiGithubLogo, PiLinkedinLogo, PiMapPin } from "react-icons/pi";
+import { SiLeetcode } from "react-icons/si";
 import { PROFILE, ROLES } from "../data.js";
 import portrait from "../assets/aryan.webp";
 import "./Home.css";
@@ -26,8 +27,8 @@ const Home = () => {
           </p>
 
           <p className="hero-lead reveal" style={{ "--delay": "240ms" }}>
-            Electrical Engineering student at NIT Delhi who builds fast, accessible React interfaces and the Node
-            backends behind them.
+            Electrical Engineering student at NIT Delhi who builds fast, accessible interfaces with React and Next.js,
+            and the Node backends behind them.
           </p>
 
           <div className="hero-actions reveal" style={{ "--delay": "320ms" }}>
@@ -43,6 +44,9 @@ const Home = () => {
               </a>
               <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className="icon-link" aria-label="LinkedIn">
                 <PiLinkedinLogo />
+              </a>
+              <a href={PROFILE.leetcode} target="_blank" rel="noopener noreferrer" className="icon-link" aria-label="LeetCode">
+                <SiLeetcode />
               </a>
             </div>
           </div>

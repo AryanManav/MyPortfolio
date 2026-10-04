@@ -10,7 +10,7 @@ const Projects = () => {
           <span className="eyebrow">03 · Projects</span>
           <h2 className="section-title">Selected work</h2>
           <p className="section-lead">
-            Full-stack builds where I owned the product end to end, from the interface down to the API and data layer.
+            Full-stack projects, from the interface down to the API, execution engine and data layer.
           </p>
         </header>
 
@@ -29,9 +29,10 @@ const Projects = () => {
                     <span className="window-dots"><i /><i /><i /></span>
                     {project.mockup === "chat" ? (
                       <div className="chat-mock">
-                        <p className="bubble from-client">Hi, my order hasn't arrived yet.</p>
-                        <p className="bubble from-agent">Sorry about that. Let me check it for you.</p>
-                        <p className="bubble from-agent">It's out for delivery and arrives today.</p>
+                        <span className="chat-notice">Riya accepted your friend request</span>
+                        <p className="bubble from-client">Hey! Are you joining the hackathon this weekend?</p>
+                        <p className="bubble from-agent">Yes, already registered. Want to team up?</p>
+                        <p className="bubble from-client">Let's do it. Sending you the invite.</p>
                         <span className="typing"><i /><i /><i /></span>
                       </div>
                     ) : (
@@ -44,7 +45,12 @@ const Projects = () => {
               <div className="project-body">
                 <span className="project-index">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="project-title">{project.name}</h3>
-                <p className="project-summary">{project.summary}</p>
+                <p className="project-subtitle">{project.subtitle}</p>
+                <ul className="project-points">
+                  {project.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
 
                 <ul className="project-stack" aria-label="Tech stack">
                   {project.stack.map((tech) => (

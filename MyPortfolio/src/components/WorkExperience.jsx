@@ -20,7 +20,9 @@ const WorkExperience = () => {
 
               <div className="job-body">
                 <h3 className="job-role">{job.role}</h3>
-                <p className="job-company">{job.company}</p>
+                <p className="job-company">
+                  {job.company} <span className="job-location">· {job.location}</span>
+                </p>
                 <ul className="job-points">
                   {job.points.map((point) => (
                     <li key={point}>{point}</li>

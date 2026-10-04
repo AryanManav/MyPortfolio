@@ -15,13 +15,14 @@ const About = () => {
 
           <div className="about-copy reveal" style={{ "--delay": "100ms" }}>
             <p>
-              I'm a B.Tech student in Electrical Engineering at NIT Delhi, and most of my time goes into building for the
-              web with the MERN stack. I like taking an interface from a Figma frame to production code that is quick to
-              load, easy to maintain and comfortable to use.
+              I'm a B.Tech student in Electrical Engineering at NIT Delhi (class of 2027), and most of my time goes into
+              building for the web with React, Next.js and Node. I like taking an interface from a Figma frame to
+              production code that is quick to load, easy to maintain and comfortable to use, and wiring up the APIs and
+              real-time features behind it.
             </p>
             <p>
-              Outside of product work I practise problem-solving on LeetCode and GeeksforGeeks, take part in hackathons and
-              contribute to open source.
+              Outside of product work I practise problem-solving in Java on LeetCode and GeeksforGeeks, compete in
+              hackathons and contribute to open source.
             </p>
           </div>
         </div>
