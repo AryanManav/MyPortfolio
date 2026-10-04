@@ -9,7 +9,7 @@ export const PROFILE = {
   location: "New Delhi, India",
   linkedin: "https://linkedin.com/in/aryanmanav",
   github: "https://github.com/AryanManav",
-  resume: "https://drive.google.com/file/d/1L8w2y4N1E28hMkVE1aCyJQceSYTAW9EK/view?usp=drivesdk",
+  resume: "https://drive.google.com/file/d/1L8w2y4N1E28hMkVE1aCyJQceSYTAW9EK/view",
 };
 
 export const ROLES = ["Frontend Developer", "MERN Stack Developer", "UI/UX Designer"];
